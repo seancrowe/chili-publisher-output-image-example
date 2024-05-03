@@ -30,7 +30,7 @@ async function loadPublisher(editorUrl: string, baseUrl: string, docId: string, 
   cc.apiKey = apiKey;
 
   document.getElementById("save")?.addEventListener("click", async (e) => {
-    const xml = await pi.executeFunction("document", "GetTempXML") as string;
+    const xml = (await pi.executeFunction("document", "GetTempXML")) as string;
 
     const resp = await cc.api.resourceItemSave({ resourceName: "Documents", xml, itemID: docId });
 
