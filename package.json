@@ -1,0 +1,16 @@
+{
+  "name": "publisher-load",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@chili-publish/publisher-interface": "^1.0.1",
+    "@seancrowe/chiliconnector-v1_2": "^2.0.0-rc.1.2",
+    "bun": "^1.1.6"
+  }
+}
